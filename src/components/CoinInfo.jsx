@@ -36,8 +36,8 @@ const CoinInfo = ({ coin }) => {
 
   const useStyles = makeStyles((theme) => ({
     container: {
-      height: 500,
-      width: 800,
+      height: "50%",
+      width: "90%",
       display: "flex",
       flexDirection: "column",
       padding: 40,
@@ -101,7 +101,9 @@ then graph is shown. */
 
           </>
         )}
-        <div
+        
+      </div>
+      <div
           style={{
             display: "flex",
             justifyContent: "space-around",
@@ -110,13 +112,12 @@ then graph is shown. */
           }}>
           {chartDays.map((day) => (
             <SelectButton
-            className={classes.selectedButton}
+            
             key={day.value}
             onClick={()=>setDays(day.value)}
             selected={day.value===days}>{day.label}</SelectButton>
           ))}
         </div>
-      </div>
 
     </ThemeProvider>
 
