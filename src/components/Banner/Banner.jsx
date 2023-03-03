@@ -7,7 +7,7 @@ const useStyles = makeStyles(() => ({
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
-        height: '60vh',
+        height: '60%',
         width: '100%',
         borderRadius: 8,
         display: 'flex',
