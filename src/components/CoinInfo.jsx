@@ -36,16 +36,17 @@ const CoinInfo = ({ coin }) => {
 
   const useStyles = makeStyles((theme) => ({
     container: {
-      height: "50%",
-      width: "90%",
+      height: "350px",
+      width: "800px",
       display: "flex",
       flexDirection: "column",
       padding: 40,
       marginTop: 25,
       justifyContent: "center",
       alignItems: "center",
-      [theme.breakpoints.down("md")]: {
-        width: "100%",
+      [theme.breakpoints.down("sm")]: {
+        width: "400px",
+        height:"150px",
         margin: "0",
         padding: 0
       }
