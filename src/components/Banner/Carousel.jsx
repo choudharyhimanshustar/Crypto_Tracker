@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* Component for carousel which displays trending coins */
 import React, { useState, useEffect } from 'react';
 import { makeStyles } from '@material-ui/core';
@@ -36,9 +37,9 @@ const Carousel = () => {
     }
     const responsive = {
         0: {
-            items: 2/* 2 items to be displayed on small screen */
+            items: 3/* 2 items to be displayed on small screen */
         },
-        512: {
+        1024: {
             items: 4 /* 4 items to be displayed on medium to big screen */
         }
     }
