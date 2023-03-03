@@ -16,7 +16,7 @@ const selectButton = ({children,selected,onClick}) => {
             borderRadius:5,
             backgroundColor:selected?"gold":"",
             color:selected?"black":"",
-            width:"10%",
+            width:"12%",
             height:"102%",
             cursor: "pointer",
             fontFamily:"Lato",
