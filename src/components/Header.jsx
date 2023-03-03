@@ -27,26 +27,26 @@ function Header() {
       <AppBar color='transparent' position="static">
         <Container>
           <Toolbar>
-            <Typography onClick={() => navigate("/")} className={headerClass.title} style={{ fontFamily: "'Lato', sans-serif" }} variant='h5' >
+            <Typography onClick={() => navigate("/")} className={headerClass.title} style={{ fontFamily: "'Lato', sans-serif",fontSize:"250%" }} variant='h5' >
               Crypto Tracker
             </Typography>
             <Select
               variant='outlined'
               style={{
-                width: 100,
-                height: 40,
+                width: "10%",
+                height: "100%",
                 marginRight: 15,
               }}
               value={currency}
               onChange={(e) => setCurrency(e.target.value)}>
               
-              <MenuItem value={'USD'} >
+              <MenuItem value={'USD'} style={{fontSize:"120%"}} >
                 USD
               </MenuItem>
-              <MenuItem value={'INR'}>
+              <MenuItem value={'INR'} style={{fontSize:"120%"}}>
                 INR
               </MenuItem>
-              <MenuItem value={'EUR'}>
+              <MenuItem value={'EUR'} style={{fontSize:"120%"}}>
                 EUR
               </MenuItem>
             </Select>
